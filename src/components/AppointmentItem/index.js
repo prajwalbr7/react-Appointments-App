@@ -3,9 +3,8 @@ import './index.css'
 
 const AppointmentList = props => {
   const {arrayList, toggleOfStarred} = props
-  const {title, date, id, Starred} = arrayList
-  console.log(title)
-  console.log(date)
+  const {titles, dates, id, Starred} = arrayList
+
   const imgUrl = Starred
     ? 'https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png'
     : 'https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png'
@@ -16,7 +15,7 @@ const AppointmentList = props => {
   return (
     <li className="list-container margin-to-left">
       <div className="container-sub-list">
-        <p className="heading-list">{title}</p>
+        <p className="heading-list">{titles}</p>
         <button
           data-testid="star"
           className="button-list"
@@ -26,7 +25,7 @@ const AppointmentList = props => {
           <img src={imgUrl} className="img-list" alt="star" />
         </button>
       </div>
-      <p className="para-list">Date: {date}</p>
+      <p className="para-list">Date: {dates}</p>
     </li>
   )
 }
