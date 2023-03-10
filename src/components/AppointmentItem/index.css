@@ -1,0 +1,42 @@
+/* Write your CSS here */
+.container-sub-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-container {
+  list-style-type: none;
+  width: 250px;
+
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+}
+.heading-list {
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 700;
+  color: #171f46;
+}
+.para-list {
+  font-family: 'Roboto';
+  font-size: 12px;
+  font-weight: 400;
+  color: #b5b7c4;
+}
+.img-list {
+  width: 20px;
+  height: 20px;
+}
+.button-list {
+  background-color: transparent;
+  border-width: 0px;
+  cursor: pointer;
+}
+.margin-to-left {
+  margin: 15px;
+}
