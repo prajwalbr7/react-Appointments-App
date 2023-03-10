@@ -67,15 +67,15 @@ class Appointments extends Component {
           <h1 className="heading">Add Appointment</h1>
           <div className="container3">
             <form className="form-style" onSubmit={this.onClickButtonAction}>
-              <label className="label-style" htmlFor="userInput">
+              <label className="label-style" htmlFor="Title">
                 TITLE
               </label>
 
               <input
-                id="userInput"
+                type="text"
+                id="Title"
                 className="input-style"
                 placeholder="Title"
-                type="input"
                 onChange={this.onChangeInput}
                 value={title}
               />
